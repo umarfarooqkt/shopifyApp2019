@@ -2,7 +2,7 @@
 
 # Absolute Basic requirements
 
-get all the products in inventory with inventory_count > 0  
+Get all the products in inventory with inventory_count > 0  
 @GET  
 http://localhost:8080/ShopifyApp/rest/all-products  
   
@@ -14,3 +14,7 @@ To buy a product (This method will reduce the inventory by 1 if the inventory of
 is bigger than 0;  if the inventory is 0 than a response error of 304 will be returned)  
 @PUT  
 http://localhost:8080/ShopifyApp/rest/buy-product-inventory?title=someTitle  
+  
+# Extra credits
+  
+Tests are under src/tests/
